@@ -5,13 +5,13 @@ FortiSIEM scripts, sharing for not to forget :)
 
 Is a bash script that using govc deploys the OVA file of the FortiSIEM Super to a VCenter environment, but then takes care of the basic configurations: setup timezone, configure IP and finish the installation until the part when you need to provide the license file (I may try to automate that part too).
 
-Requeriments: 
+Requirements: 
 - Linux distro (I tested on Ubuntu)
 - govc binary installed
 - jq (apt install jq)
 
 Usage:
-First edit the script and replace the values of the following varialbes acordly to your VCenter setup:
+First, edit the script and replace the values of the following variables to fit your VCenter setup:
 
 ```
 export GOVC_URL=https://vcsa.fortilabs.org/sdk
@@ -25,7 +25,7 @@ ovalocation="https://vcsa.fortilabs.org/folder/a78b945b-dca1-cab1-64a6-ac1f6b1a7
 
 ```
 
-For use as location an URL of the OVA file from the ESX/VCenter datastore, first upload, the browse the datastore from something like this: https://ESX-OR-VCENTER/folder, after find the file just copy the URL and use it here, other option is to save the file in any other webserver or provide the local path from the same machine that you are using for execute this script.
+For use as location an URL of the OVA file from the ESX/VCenter datastore, first upload, the browse the datastore from something like this: https://ESX-OR-VCENTER/folder, after finding the file just copy the URL and use it here, another option is to save the file in any other web server or provide the local path from the same machine that you are using for executing this script.
 
 Usage: 
 
@@ -85,7 +85,7 @@ Super URL: https://10.10.10.101/
 UUID: 42398B99-DAA1-148A-A9EE-8B75676C358D
 
 ```
-Next version will include a number of Super VMs ready, specially for setup a training environment, in the meantime you could use the following command:
+Next version will allow the creation of a set of Super VMs to deploy, especially for setup a training environment, in the meantime, you could use the following command:
 
 ```
 #!/bin/bash
