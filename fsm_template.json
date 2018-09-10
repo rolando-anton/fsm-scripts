@@ -1,0 +1,34 @@
+{
+    "Annotation": "VA CentOS 6.8 VM for Network Monitoring",
+    "DiskProvisioning": "thin",
+    "IPAllocationPolicy": "fixedPolicy",
+    "IPProtocol": "IPv4",
+    "InjectOvfEnv": true,
+    "Name": "fsm-name",
+    "PowerOn": false,
+    "NetworkMapping": [
+        {
+         "Name": "Network 1",
+            "Network": "vm_portgroup"
+	}
+    ],
+    "PropertyMapping": [
+        {
+            "Key": "vami.gateway.FortiSIEM-VA",
+            "Value": "10.10.10.1"
+        },
+        {
+            "Key": "vami.DNS.FortiSIEM-VA",
+            "Value": "10.10.10.1"
+        },
+        {
+            "Key": "vami.ip0.FortiSIEM-VA",
+            "Value": "fsm-ip"
+        },
+        {
+            "Key": "vami.netmask0.FortiSIEM-VA",
+            "Value": "255.255.255.0"
+        }
+    ],
+    "WaitForIP": false
+}
