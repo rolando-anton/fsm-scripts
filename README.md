@@ -1,5 +1,5 @@
 # fsm-scripts
-FortiSIEM scripts, sharing to not forget :)
+FortiSIEM scripts, sharing for not to forget :)
 
 # #1: SuperMassive Multiplicator
 
