@@ -62,5 +62,28 @@ Deploying OVA ...
 [10-09-18 02:54:14] Uploading cmdb.vmdk... OK
 [10-09-18 02:55:05] Injecting OVF environment...
 Powering on VirtualMachine:vm-216... OK
-```
+Uploading unattended script ...
+Script ready, Go!! Time to do some magic... 
+Gathering Logs...
+[10-09-18 03:13:54] Downloading... OK
+govc: file already exists
+Final reboot...
 
+The End...: 2018-09-10-03:14:09
+--------------------------
+FSM Deployed:
+--------------------------
+VM/Host Name: fsm51-super001
+Super URL: https://10.10.10.101/
+UUID: 42398B99-DAA1-148A-A9EE-8B75676C358D
+
+```
+Next version will include a number of Super VMs ready, specially for setup a training environment, in the meantime you could use the following command:
+
+```
+#!/bin/bash
+for super in {101..110}
+do
+    sh supermassive.sh fsm51-pod-$super 10.10.10.$super 255.255.255.0 10.10.10.1 10.10.10.1 dc_mgmt
+done
+```
