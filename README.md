@@ -13,17 +13,14 @@ Requeriments:
 Usage:
 First edit the script and replace the values of the following varialbes acordly to your VCenter setup:
 
-`export GOVC_URL=https://vcsa.fortilabs.org/sdk`
-
-`export GOVC_USERNAME=administrator@aiur.fortilabs.org`
-
-`export GOVC_PASSWORD=th3p4ssw0rd`
-
-`export GOVC_DATASTORE=vsanDatastore`
-
-`export GOVC_NETWORK=dc_mgmt`
-
-`export GOVC_DATACENTER=Aiur`
+```
+export GOVC_URL=https://vcsa.fortilabs.org/sdk
+export GOVC_USERNAME=administrator@aiur.fortilabs.org
+export GOVC_PASSWORD=th3p4ssw0rd
+export GOVC_DATASTORE=vsanDatastore
+export GOVC_NETWORK=dc_mgmt
+export GOVC_DATACENTER=Aiur
+```
 
 Usage: sh supermassive.sh VM_Name IP NETMASK GW DNS VM_PORTGROUP
 
@@ -33,25 +30,26 @@ Example: sh supermassive.sh fsm51-super001 10.10.10.101 255.255.255.0 10.10.10.1
 
 Sample Output:
 
-root@ansible:~/fortilabs_devops/fsm# sh supermassive.sh fsm51-super001 10.10.10.101 255.255.255.0 10.10.10.1 10.10.10.1 dc_mgmt
+```
+
+root@devops-sandbox:~/fortilabs_devops/fsm# sh supermassive.sh fsm51-super001 10.10.10.101 255.255.255.0 10.10.10.1 10.10.10.1 dc_mgmt
  
 (c) 2018 Fortinet LATAM CSE - FortiSIEM SuperMassive Multiplicator - 1.0
 
 
-  ____                             __  __                   _             
- / ___|  _   _  _ __    ___  _ __ |  \/  |  __ _  ___  ___ (_)__   __ ___ 
- \___ \ | | | || '_ \  / _ \| '__|| |\/| | / _` |/ __|/ __|| |\ \ / // _ \
-  ___) || |_| || |_) ||  __/| |   | |  | || (_| |\__ \\__ \| | \ V /|  __/
- |____/  \__,_|| .__/  \___||_|   |_|  |_| \__,_||___/|___/|_|  \_/  \___|
-               |_|                                                        
-  __  __         _  _    _         _  _              _                    
- |  \/  | _   _ | || |_ (_) _ __  | |(_)  ___  __ _ | |_  ___   _ __      
- | |\/| || | | || || __|| || '_ \ | || | / __|/ _` || __|/ _ \ | '__|     
- | |  | || |_| || || |_ | || |_) || || || (__| (_| || |_| (_) || |        
- |_|  |_| \__,_||_| \__||_|| .__/ |_||_| \___|\__,_| \__|\___/ |_|        
-                           |_|                                            
+ ███████╗██╗   ██╗██████╗ ███████╗██████╗ ███╗   ███╗ █████╗ ███████╗███████╗██╗██╗   ██╗███████╗  
+ ██╔════╝██║   ██║██╔══██╗██╔════╝██╔══██╗████╗ ████║██╔══██╗██╔════╝██╔════╝██║██║   ██║██╔════╝  
+ ███████╗██║   ██║██████╔╝█████╗  ██████╔╝██╔████╔██║███████║███████╗███████╗██║██║   ██║█████╗    
+ ╚════██║██║   ██║██╔═══╝ ██╔══╝  ██╔══██╗██║╚██╔╝██║██╔══██║╚════██║╚════██║██║╚██╗ ██╔╝██╔══╝    
+ ███████║╚██████╔╝██║     ███████╗██║  ██║██║ ╚═╝ ██║██║  ██║███████║███████║██║ ╚████╔╝ ███████╗  
+ ╚══════╝ ╚═════╝ ╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═══╝  ╚══════╝  
 
-
+ ███╗   ███╗██╗   ██╗██╗  ████████╗██╗██████╗ ██╗     ██╗ ██████╗ █████╗ ████████╗ ██████╗ ██████╗     
+ ████╗ ████║██║   ██║██║  ╚══██╔══╝██║██╔══██╗██║     ██║██╔════╝██╔══██╗╚══██╔══╝██╔═══██╗██╔══██╗    
+ ██╔████╔██║██║   ██║██║     ██║   ██║██████╔╝██║     ██║██║     ███████║   ██║   ██║   ██║██████╔╝    
+ ██║╚██╔╝██║██║   ██║██║     ██║   ██║██╔═══╝ ██║     ██║██║     ██╔══██║   ██║   ██║   ██║██╔══██╗    
+ ██║ ╚═╝ ██║╚██████╔╝███████╗██║   ██║██║     ███████╗██║╚██████╗██║  ██║   ██║   ╚██████╔╝██║  ██║    
+ ╚═╝     ╚═╝ ╚═════╝ ╚══════╝╚═╝   ╚═╝╚═╝     ╚══════╝╚═╝ ╚═════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝    
 
 
 Usage: sh supermassive.sh VM_Name IP NETMASK GW DNS VM_PORTGROUP
@@ -64,3 +62,5 @@ Deploying OVA ...
 [10-09-18 02:54:14] Uploading cmdb.vmdk... OK
 [10-09-18 02:55:05] Injecting OVF environment...
 Powering on VirtualMachine:vm-216... OK
+```
+
