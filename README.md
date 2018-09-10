@@ -22,11 +22,13 @@ export GOVC_NETWORK=dc_mgmt
 export GOVC_DATACENTER=Aiur
 ```
 
-Usage: sh supermassive.sh VM_Name IP NETMASK GW DNS VM_PORTGROUP
+Usage: 
+
+sh supermassive.sh VM_Name IP NETMASK GW DNS VM_PORTGROUP
 
 Example:
 
-Example: sh supermassive.sh fsm51-super001 10.10.10.101 255.255.255.0 10.10.10.1 10.10.10.1 dc_mgmt
+sh supermassive.sh fsm51-super001 10.10.10.101 255.255.255.0 10.10.10.1 10.10.10.1 dc_mgmt
 
 Sample Output:
 
