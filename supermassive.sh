@@ -15,7 +15,7 @@ export GOVC_DATASTORE=vsanDatastore
 export GOVC_NETWORK=dc_mgmt
 export GOVC_DATACENTER=Aiur
 
-# It could be an URL or a local file
+# This could be an URL or a local file
 
 ovalocation="https://vcsa.fortilabs.org/folder/a78b945b-dca1-cab1-64a6-ac1f6b1a7eda/FortiSIEM-VA-5.1.0.1336.ova?dcPath=Aiur&dsName=vsanDatastore"
 
