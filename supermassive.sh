@@ -5,7 +5,7 @@
 # Version 1.0 - Sep 2018
 # This script doesn't have validation routines for the input values used, so be careful with the information provided.
 
-# Edit the following variables accordly:
+# Edit the following variables as required:
 
 export GOVC_INSECURE=1
 export GOVC_URL=https://vcsa.fortilabs.org/sdk
