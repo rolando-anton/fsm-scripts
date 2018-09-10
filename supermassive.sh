@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# FortiSIEM FortiSIEM SuperMassive Multiplicator
+# FortiSIEM SuperMassive Multiplicator
 # ranton@fortinet.com
 # Version 1.0 - Sep 2018
 # This script doesn't have validation routines for the input values used, so be careful with the information provided.
