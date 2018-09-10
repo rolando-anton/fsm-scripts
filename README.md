@@ -1,6 +1,3 @@
-# fsm-scripts
-FortiSIEM scripts, sharing for not to forget :)
-
 # #1: SuperMassive Multiplicator
 
 Is a bash script that using govc deploys the OVA file of the FortiSIEM Super to a VCenter environment, but then takes care of the basic configurations: setup timezone, configure IP and finish the installation until the part when you need to provide the license file (I may try to automate that part too).
