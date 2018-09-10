@@ -24,7 +24,7 @@ ovalocation="https://vcsa.fortilabs.org/folder/a78b945b-dca1-cab1-64a6-ac1f6b1a7
 
 ```
 
-For use as location an URL of the OVA file from the ESX/VCenter datastore, first upload, the browse the datastore from something like this: https://ESX-OR-VCENTER/folder, after finding the file just copy the URL and use it here, another option is to save the file in any other web server or provide the local path from the same machine that you are using for executing this script.
+For use as location an URL of the OVA file from the ESX/VCenter datastore, first upload the OVA file to the datastore, then browse it from something like this: https://ESX-OR-VCENTER/folder, after finding the file just copy the URL and use it here, another option is to save the file in any other web server or provide the local path from the same machine that you are using for executing this script.
 
 Usage: 
 
