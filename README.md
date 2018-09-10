@@ -20,7 +20,12 @@ export GOVC_PASSWORD=th3p4ssw0rd
 export GOVC_DATASTORE=vsanDatastore
 export GOVC_NETWORK=dc_mgmt
 export GOVC_DATACENTER=Aiur
+
+ovalocation="https://vcsa.fortilabs.org/folder/a78b945b-dca1-cab1-64a6-ac1f6b1a7eda/FortiSIEM-VA-5.1.0.1336.ova?dcPath=Aiur&dsName=vsanDatastore"
+
 ```
+
+For use as location an URL of the OVA file from the ESX/VCenter datastore, first upload, the browse the datastore from something like this: https://ESX-OR-VCENTER/folder, after find the file just copy the URL and use it here, other option is to save the file in any other webserver or provide the local path from the same machine that you are using for execute this script.
 
 Usage: 
 
