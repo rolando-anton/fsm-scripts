@@ -2,6 +2,8 @@
 
 Is a bash script that using govc deploys the OVA file of the FortiSIEM Super to a VCenter environment, but then takes care of the basic configurations: setup timezone, configure IP and finish the installation until the part when you need to provide the license file (I may try to automate that part too).
 
+**Important: This script doesn't have validation routines for the input values used, so be careful with the information provided.**
+
 Requirements: 
 - Linux distro (I tested on Ubuntu)
 - govc binary installed
