@@ -18,7 +18,7 @@ export GOVC_DATACENTER=Aiur
 # This could be an URL or a local file
 
 ovalocation="https://vcsa.fortilabs.org/folder/a78b945b-dca1-cab1-64a6-ac1f6b1a7eda/FortiSIEM-VA-5.1.0.1336.ova?dcPath=Aiur&dsName=vsanDatastore"
-
+timezone=America/Lima
 # DO NOT EDIT FROM THIS POINT
 
 red='\e[1;31m'
@@ -64,7 +64,7 @@ govc guest.upload -f - "$script" << EOF
 #!/bin/bash
 echo "Configuring Time Zone"
 export LC_CTYPE="en_US.utf8"
-/opt/vmware/share/vami/vami_set_timezone_cmd America/Lima
+/opt/vmware/share/vami/vami_set_timezone_cmd $timezone
 echo "$2 		$1	$1" >> /etc/hosts
 /opt/vmware/share/vami/vami_set_network eth0 STATICV4 $2 $3 $4
 /opt/vmware/share/vami/vami_set_dns $5
@@ -76,6 +76,8 @@ EOF
 
 govc guest.chmod 0755 "$script"
 echo "Script ready, Go!! Time to do some magic... "
+sleep 3
+echo "Grab a cup of coffe/bear/water?, this may take from 10 to 15 minutes ... "
 pid=$(govc guest.start "$script" '>&' /root/fsmdeploy.log)
 status=$(govc guest.ps -p "$pid" -json -X | jq .ProcessInfo[].ExitCode)
 if [ "$status" -ne "0" ] ; then
