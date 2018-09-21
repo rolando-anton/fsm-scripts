@@ -100,5 +100,7 @@ done
 
 Is simple curl script for upload license to FSM
 
+```
 Usage:  sh fsmuploadlic.sh IP LIC_FILE
 Example: sh fsmuploadlic.sh 10.10.10.101 FSMS010000003166.lic
+```
