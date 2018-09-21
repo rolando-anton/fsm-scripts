@@ -93,3 +93,12 @@ do
     sh supermassive.sh fsm51-pod-$super 10.10.10.$super 255.255.255.0 10.10.10.1 10.10.10.1 dc_mgmt
 done
 ```
+
+
+
+# # 2: FSM License Upload Tool v1.0
+
+Is simple curl script for upload license to FSM
+
+Usage:  sh fsmuploadlic.sh IP LIC_FILE
+Example: sh fsmuploadlic.sh 10.10.10.101 FSMS010000003166.lic
