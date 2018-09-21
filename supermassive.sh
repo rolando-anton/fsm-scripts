@@ -77,7 +77,7 @@ EOF
 govc guest.chmod 0755 "$script"
 echo "Script ready, Go!! Time to do some magic... "
 sleep 3
-echo "Grab a cup of coffe/bear/water?, this may take from 10 to 15 minutes ... "
+echo "Grab a cup of coffe/beer/water?, this may take from 10 to 15 minutes ... "
 pid=$(govc guest.start "$script" '>&' /root/fsmdeploy.log)
 status=$(govc guest.ps -p "$pid" -json -X | jq .ProcessInfo[].ExitCode)
 if [ "$status" -ne "0" ] ; then
